@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 04, 2024 at 05:23 PM
+-- Generation Time: May 04, 2024 at 05:39 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -33,6 +33,22 @@ CREATE TABLE `department` (
   `dept_no` int(8) NOT NULL,
   `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `department`
+--
+
+INSERT INTO `department` (`dept_no`, `name`) VALUES
+(1, 'Medicare'),
+(2, 'Library'),
+(3, 'AMS'),
+(4, 'Sports'),
+(5, 'IT'),
+(6, 'Hostel'),
+(7, 'Mess'),
+(8, 'Finance'),
+(9, 'Academics'),
+(10, 'dept');
 
 -- --------------------------------------------------------
 
@@ -83,7 +99,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `department`
 --
 ALTER TABLE `department`
-  MODIFY `dept_no` int(8) NOT NULL AUTO_INCREMENT;
+  MODIFY `dept_no` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
